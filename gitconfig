@@ -5,6 +5,14 @@
     sslverify = false
 [credential]
 	helper = cache --timeout 900
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
 [alias]
     s = status
     l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
