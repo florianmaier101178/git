@@ -1,0 +1,16 @@
+[user]
+	name = Florian Maier
+	email = florian.maier@daimler.com
+[http]
+    sslverify = false
+[credential]
+	helper = cache --timeout 900
+[alias]
+    s = status
+    l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
+    lg = log --graph --oneline --all --decorate
+    pr = pull --rebase
+    pom = push origin master
+    por = push origin release
+    cm = checkout master
+    cr = checkout release
