@@ -13,6 +13,10 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
+[branch]
+    autosetupmerge = true
+[push]
+    default = tracking
 [alias]
     s = status
     l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
