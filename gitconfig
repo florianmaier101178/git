@@ -1,18 +1,18 @@
 [user]
-	name = Florian Maier
-	email = florian.maier@daimler.com
+    name = Florian Maier
+    email = florian.maier@daimler.com
 [http]
     sslverify = false
 [credential]
-	helper = cache --timeout 900
+    helper = cache --timeout 900
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [mergetool]
-	prompt = false
+    prompt = false
 [branch]
     autosetupmerge = true
 [push]
