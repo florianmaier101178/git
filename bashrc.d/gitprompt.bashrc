@@ -10,11 +10,16 @@ print_git_status() {
         echo ""
     else 
         dirty=$(git status --porcelain 2> /dev/null | wc -l)
+        stashed=$(git stash list 2> /dev/null | wc -l)
         if [ "$dirty" -gt "0" ]; then
-            echo " ✖"
+            result=" ✖"
         else
-            echo " ✔"
+            result=" ✔"
         fi  
+        if [ "$stashed" -gt "0" ]; then
+            result=$result"⚑"
+        fi
+        echo $result
     fi
 }
 
