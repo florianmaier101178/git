@@ -7,7 +7,8 @@ git configuration for personal use.
 cd ~
 git clone https://github.com/florianmaier101178/git.git
 ```
-2. link your local ~/.gitconfig file to ~/git/gitconfig
+2. execute [setup script](https://github.com/florianmaier101178/git/blob/master/setup.sh)
 ``` shell
-ln -s ~/git/gitconfig ~/.gitconfig
+cd ~
+./setup.sh
 ```
