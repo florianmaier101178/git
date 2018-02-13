@@ -9,3 +9,5 @@ fi
 # link .gitconfig
 ln -s ~/git/gitconfig ~/.gitconfig
 
+# copy gitprompt.bashrc
+cp ~/git/bashrc.d/gitprompt.bashrc ~/.bashrc.d/gitprompt.bashrc
