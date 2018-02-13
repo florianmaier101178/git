@@ -1,0 +1,10 @@
+
+# Subject line with limit of 50 characters
+#
+# Separate subject and body with empty line.
+# Capitalize the subject line.
+# Do not end the subject line with a period.
+# Wrap the body at 72 characters.
+# Use the body to explain what and why vs. how.
+#
+# See https://chris.beams.io/posts/git-commit/
