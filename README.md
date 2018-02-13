@@ -9,6 +9,5 @@ git clone https://github.com/florianmaier101178/git.git
 ```
 2. execute [setup script](https://github.com/florianmaier101178/git/blob/master/setup.sh)
 ``` shell
-cd ~
 ./setup.sh
 ```
