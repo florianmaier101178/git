@@ -17,6 +17,8 @@
     autosetupmerge = true
 [push]
     default = tracking
+[commit]
+    template = ~/.gitcommitmessage
 [alias]
     s = status
     l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
