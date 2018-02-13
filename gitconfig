@@ -20,11 +20,31 @@
 [commit]
     template = ~/.gitcommitmessage
 [alias]
+    # inspired by https://bitbucket.org/durdn/cfg/src/master/.gitconfig?at=master&fileviewer=file-view-default
     s = status
+    st = status -s
+    c = commit
+    cm = commit -m
+    cam = commit -am
+    amend = commit --amend
+    co = checkout
+    cp = cherry-pick
     l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
     lg = log --graph --oneline --all --decorate
+    rh = reset --hard
+    sl = stash list
+    sc = stash clear
+    sa = stash apply
     pr = pull --rebase
     pom = push origin master
     por = push origin release
     cm = checkout master
     cr = checkout release
+    ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+    # initial empty commit
+    empty = "!git commit -am\"[empty] Initial commit\" --allow-empty"
+    # list all aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+    # add remote 
+    ra = "!f() { git remote add $1 $2; }; f"
