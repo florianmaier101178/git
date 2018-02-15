@@ -6,13 +6,21 @@
 [credential]
     helper = cache --timeout 900
 [diff]
-    tool = vimdiff
+    #tool = vimdiff
+    tool = p4merge
 [difftool]
     prompt = false
+[difftool "p4merge"]
+    trustExitCode = true
+    cmd = `/usr/local/bin/p4merge $LOCAL $REMOTE`
 [merge]
+    #tool = vimdiff
     tool = vimdiff
 [mergetool]
     prompt = false
+[mergetool "p4merge"]
+    trustExitCode = true
+    cmd = `/usr/local/bin/p4merge $LOCAL $REMOTE`
 [branch]
     autosetupmerge = true
 [push]
