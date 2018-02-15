@@ -20,7 +20,7 @@
     prompt = false
 [mergetool "p4merge"]
     trustExitCode = true
-    cmd = `/usr/local/bin/p4merge $LOCAL $REMOTE $MERGE`
+    cmd = `/usr/local/bin/p4merge $LOCAL $REMOTE $BASE $MERGED`
 [branch]
     autosetupmerge = true
 [push]
