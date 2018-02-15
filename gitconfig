@@ -15,7 +15,7 @@
     cmd = `/usr/local/bin/p4merge $LOCAL $REMOTE`
 [merge]
     #tool = vimdiff
-    tool = vimdiff
+    tool = p4merge
 [mergetool]
     prompt = false
 [mergetool "p4merge"]
