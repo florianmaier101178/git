@@ -1,6 +1,7 @@
-[user]
-    name = Florian Maier
-    email = florian.maier@daimler.com
+[includeIf "gitdir:/home/flo/"]
+    path = ~/.gitconfig-daimler
+[includeIf "gitdir:/Users/flo/"]
+    path = ~/.gitconfig-private
 [http]
     sslverify = false
 [credential]

@@ -8,6 +8,8 @@ fi
 
 # link .gitconfig
 ln -s ~/git/gitconfig ~/.gitconfig
+ln -s ~/git/gitconfig-daimler ~/.gitconfig-daimler
+ln -s ~/git/gitconfig-private ~/.gitconfig-private
 
 # link .gitcommitmessage
 ln -s ~/git/gitcommitmessage ~/.gitcommitmessage
