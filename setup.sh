@@ -6,7 +6,7 @@ if [ -f ~/.gitconfig ]; then
     mv ~/.gitconfig ~/.gitconfig.$DATE
 fi
 
-# link .gitconfig
+# link .gitconfig and concrete .gitconfig files for daimler and private use
 ln -s ~/git/gitconfig ~/.gitconfig
 ln -s ~/git/gitconfig-daimler ~/.gitconfig-daimler
 ln -s ~/git/gitconfig-private ~/.gitconfig-private
