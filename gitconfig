@@ -38,7 +38,7 @@
     amend = commit --amend
     co = checkout
     cp = cherry-pick
-    l = log --pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"
+    l = log '--pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"'
     lg = log --graph --oneline --all --decorate
     rh = reset --hard
     sl = stash list
