@@ -1,5 +1,5 @@
 [includeIf "gitdir:/home/flo/"]
-    path = ~/.gitconfig-daimler
+    path = ~/.gitconfig-liebherr
 [includeIf "gitdir:/Users/flo/"]
     path = ~/.gitconfig-private
 [http]

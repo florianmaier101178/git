@@ -9,10 +9,11 @@ fi
 # link .gitconfig and concrete .gitconfig files for daimler and private use
 ln -s ~/git/gitconfig ~/.gitconfig
 ln -s ~/git/gitconfig-daimler ~/.gitconfig-daimler
+ln -s ~/git/gitconfig-liebherr ~/.gitconfig-liebherr
 ln -s ~/git/gitconfig-private ~/.gitconfig-private
 
 # link .gitcommitmessage
 ln -s ~/git/gitcommitmessage ~/.gitcommitmessage
 
 # copy gitprompt.bashrc
-cp ~/git/bashrc.d/gitprompt.bashrc ~/.bashrc.d/gitprompt.bashrc
+#cp ~/git/bashrc.d/gitprompt.bashrc ~/.bashrc.d/gitprompt.bashrc
