@@ -32,6 +32,7 @@
     # inspired by https://bitbucket.org/durdn/cfg/src/master/.gitconfig?at=master&fileviewer=file-view-default
     s = status
     st = status -s
+    t = tag
     d = diff
     c = commit
     cm = commit -m
