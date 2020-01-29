@@ -37,6 +37,7 @@
     c = commit
     cm = commit -m
     cam = commit -am
+    aca = commit -a --amend --no-edit
     amend = commit --amend
     co = checkout
     cp = cherry-pick
