@@ -42,6 +42,7 @@
     co = checkout
     cp = cherry-pick
     l = log '--pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"'
+    lr = log --reverse '--pretty=format:"%C(yellow)%H %Cgreen%an %Creset%s"'
     lg = log --graph --oneline --all --decorate
     rh = reset --hard
     sl = stash list
