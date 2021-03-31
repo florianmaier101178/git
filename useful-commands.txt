@@ -1,0 +1,3 @@
+author statistics in repo
+=========================
+git shortlog -s -n
