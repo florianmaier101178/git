@@ -1,3 +1,68 @@
 author statistics in repo
 =========================
 git shortlog -s -n
+
+identify dangling commits in repo (commits no reference (branch) is pointing to)
+================================================================================
+git fsck --dangling --no-progress
+git fsck --unreachable --no-progress # unreachable means, they are ancesstors of dangling commits
+
+git branch branchname <hash of dangling commit> #
+
+================================================================================
+
+Merges
+******
+Fast-Forward Merge vs True Merge
+
+Fast-Forward Merge
+------------------
+master and feature branches have to be on the same line of history
+-> no merge commit is created
++ linear history
+- we cannot remove work packages, because no merge commits can be undone
+
+True-Merge
+----------
+feature branch has diverged from master
+-> merge commit is created
+- non-linear history
++ work packages are good identifiable
+
+What if we like fast-forward merge with diverged history?
+---------------------------------------------------------
+we need to bring the feature bring forward to the diverged master, therefore
+we need to rebase it
+git rebase master feature
+means: move head to feature and rebase it on top of master
+-> no merge is commited, because fast-forward can be applied
+
+It's also possible to create a merge commit on straight line of history!
+------------------------------------------------------------------------
+git merge feature -m "M" --no-off
+-> merge commit is created
+
+Rules of Merging
+================
+Public branch into public branch => use True Merge
+Private branch into public branch => use Fast-Forward Merge
+
+================================================================================
+
+find point where branch diverges from other branch
+--------------------------------------------------
+git merge-base master feature
+
+
+================================================================================
+merge problems
+**************
+
+git checkout --conflict=diff3 filename
+
+-> shows also merge-base version together with conflict
+
+git checkout --theirs filename
+git checkout --ours filename
+
+================================================================================

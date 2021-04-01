@@ -17,6 +17,7 @@
 [merge]
     #tool = vimdiff
     tool = p4merge
+    conflictStyle = diff3
 [mergetool]
     prompt = false
 [mergetool "p4merge"]
