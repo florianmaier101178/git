@@ -64,3 +64,5 @@
     ra = "!f() { git remote add $1 $2; }; f"
     # show commits different on branches
     codi = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $1..$2; }; f"
+[init]
+	defaultBranch = master
